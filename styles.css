@@ -1,0 +1,34 @@
+:root {
+    --primary-color: grey;
+    --secondary-color: orange;
+    --font-weight: 700:
+    --font-size: 16px;
+    --font-style: italic;
+  }
+
+  body {
+    background-color: var(--primary-color);
+    font-size: var(--font-size);
+  }
+
+  h1 {
+    color: var(--secondary-color);
+    font-style: var(--font-style)
+  }
+  h2 {
+    font-weight: var(--font-weight)
+  }
+
+  p {
+    font-size: calc(var(--font-size) * 1.2);
+  }
+
+  
+  .alert {
+    --bg-color: red; /* Define local variable */
+    background-color: var(--bg-color); /* Use the variable for the background color */
+    padding: 10px 20px;
+    border-radius: 4px;
+    font-weight: var(--font-weight); /*Use the global variable for font weight*/
+    width: 50px;
+  }
